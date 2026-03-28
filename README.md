@@ -29,8 +29,8 @@ Based on the [forum discussion](https://forum.obsidian.md/t/web-clipper-youtube-
 
 ## ⬇️ Download & Install Template
 
-<img src="assets/download.png" width="500"/>
-<img src="assets/import-select.png" width="700"/>
+<img src="assets/download.png" width="800"/>
+<img src="assets/import-select.png" width="800"/>
 
 ## 🔧 STEP 1 - Enable Auto-Transcript
 
@@ -56,6 +56,11 @@ After installing the template, you need the transcription tab to open automatica
   <img src="assets/1-step.png" width="300"/>
   <img src="assets/2-step.png" width="300"/>
 </div>
+
+## STEP 3 - Be Happy 😁
+
+<img src="assets/example-working.png" width="800"/>
+<img src="assets/done.png" width="600"/>
 
 ### 🤝 Contributing
 
