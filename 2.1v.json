@@ -1,0 +1,33 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "2.1v",
+	"behavior": "create",
+	"noteContentFormat": "{% set url = schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\" %}\n{% set timestamps = selector:.ytwTranscriptSegmentViewModelTimestamp,.segment .segment-timestamp %}\n\n{% set oldSelector = selectorHtml:transcript-segment-view-model %}\n{% if  oldSelector %}\n  {% set texts = selector:transcript-segment-view-model span %}\n{% else %}\n  {% set texts = selector:.segment-text %}\n{% endif %}\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Transcript\n{% for ts in timestamps %}\n  {% set parts = ts|split:\":\" %}\n  {% set length = parts|length %}\n  {% if length >= 3 %}\n    [{{ts}}]({{url}}&t={{parts|slice:0,1}}h{{parts|slice:1,2}}m{{parts|slice:2,3}}s) {{texts[loop.index0]}}\n  {% else %}\n    [{{ts}}]({{url}}&t={{parts|slice:0,1}}m{{parts|slice:1,2}}s) {{texts[loop.index0]}}\n  {% endif %}\n{% endfor %}",
+	"properties": [
+		{
+			"name": "link",
+			"value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"}}",
+			"type": "text"
+		},
+		{
+			"name": "aliases",
+			"value": "{{meta:name:keywords}}",
+			"type": "text"
+		},
+		{
+			"name": "categories",
+			"value": "{{schema:@VideoObject:genre}}",
+			"type": "multitext"
+		},
+		{
+			"name": "relations",
+			"value": "",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"https://www.youtube.com/watch"
+	],
+	"noteNameFormat": "{{schema:@VideoObject:name|safe_name|trim}}",
+	"path": ""
+}
