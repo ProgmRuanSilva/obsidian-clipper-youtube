@@ -1,6 +1,7 @@
 {
   "schemaVersion": "0.2.0",
   "name": "YouTube Transcript",
+  "author": "Ruan Silva",
   "behavior": "create",
   "properties": [
     {

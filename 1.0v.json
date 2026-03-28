@@ -1,6 +1,7 @@
 {
 	"schemaVersion": "0.1.0",
 	"name": "1.0v",
+	"author": "Ruan Silva",
 	"behavior": "create",
 	"noteContentFormat": "![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Transcript\n{{selectorHtml:yt-formatted-string.segment-text.style-scope,.ytd-transcript-segment-render |replace:(\" “\":\" \",\" ”\":\" \")|join:\\n|markdown}}\n\n{{selectorHtml:transcript-segment-view-model .yt-core-attributed-string|replace:(\" “\":\" \",\" ”\":\" \")|join:\\n|markdown}}",
 	"properties": [

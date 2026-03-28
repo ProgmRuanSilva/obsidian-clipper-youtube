@@ -1,43 +1,44 @@
 <div style="text-align:center">
-  <h1 align="center">✨ Obsidian Clipper YouTube Videos ✨</h1>
+  <h1 align="center">🎥 Clip YouTube Videos in Obsidian 🎥</h1>
     <p aligh="center">
       <img src="assets/logo.png" alt="description">
     </p>
 </div>
 
-This plugin adds the ability to transcribe YouTube videos into notes. It also adds a new note type for YouTube videos.
+Transcribe YouTube videos directly into Obsidian notes with one click.
 
-Based in the [forum discussion](https://forum.obsidian.md/t/web-clipper-youtube-video-transcript-for-yts-ui-feb-2026-update/111550/7) I made a template to unify all selectors at once for anyone who wants to use it.
+Based on the [forum discussion](https://forum.obsidian.md/t/web-clipper-youtube-video-transcript-for-yts-ui-feb-2026-update/111550/7), this template unifies all selectors for seamless integration.
 
-## Installation
+# Installation
 
-#### STEP 0 - Choosing your template style
+## 💄 STEP 0 - Choose your template style
 
 <div align="center" style="display:flex;justify-content:center;gap:10px;">
 
 <div style="text-align:center">
   <h3>Raw Transcription</h3>
-  <a href="2.1v.json" download><img src="assets/raw.png" width="300"/></a>
+  <a href="2.1v.json" download><img src="assets/raw.png" width="500"/></a>
 </div>
 
 <div style="text-align:center">
   <h3>Timestamps</h3>
-  <a href="2.2v.json" download><img src="assets/timestamp.png" width="300"/></a>
+  <a href="2.2v.json" download><img src="assets/timestamp.png" width="500"/></a>
 </div>
 
 </div>
 
-## Downloading the Selected Template
+## ⬇️ Download & Install Template
 
 <img src="assets/download.png" width="500"/>
 <img src="assets/import-select.png" width="700"/>
 
-#### STEP 1 - Open transcribe section automatically
+## 🔧 STEP 1 - Enable Auto-Transcript
 
-After the template installation you need to open the transcription tab aways, you could have you own code or find aother solution for it, I'll explain using YouTube Tweaks plugin.
-<h4 align="center">Install YouTube Tweaks in your browser:</h4>
+After installing the template, you need the transcription tab to open automatically. We'll use the YouTube Tweaks browser extension for this.
 
-<div align="center" style="display:flex;justify-content:center;gap:20px;">
+<h4 align="center">🌐 Install YouTube Tweaks:</h4>
+
+<div align="left" style="display:flex;justify-content:center;gap:20px;">
   <a href="https://addons.mozilla.org/en-US/firefox/addon/tweaks-for-youtube/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/960px-Firefox_logo%2C_2019.svg.png?_=20250401130810" width="80" alt="Firefox"/>
   </a>
@@ -49,15 +50,17 @@ After the template installation you need to open the transcription tab aways, yo
   </a>
 </div>
 
-#### STEP 2 - YouTube Tweaks Setup
+## ⚙️ STEP 2 - Configure YouTube Tweaks
 
 <div style="display:flex;align-items:center;gap:20px;">
   <img src="assets/1-step.png" width="300"/>
   <img src="assets/2-step.png" width="300"/>
 </div>
 
-### Contrubuiting
+### 🤝 Contributing
 
-### Troubleshooting
+You are welcome to submit a pull request making your own version for the community. ✨
 
-YouTube changes the selectors periodicaly, we upate every time but can be delayed
+### 🔥 Troubleshooting
+
+YouTube updates selectors periodically — we patch as fast as possible.

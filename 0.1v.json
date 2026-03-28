@@ -1,6 +1,7 @@
 {
   "schemaVersion": "0.1.0",
   "name": "YouTube Transcript",
+  "author": "Ruan Silva",
   "behavior": "create",
   "noteContentFormat": "![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Transcript\n\n{{selectorHtml:transcript-segment-view-model .yt-core-attributed-string\n  |replace:(\" “\":\" \",\" ”\":\" \")\n  |join\n  |markdown}}",
   "properties": [

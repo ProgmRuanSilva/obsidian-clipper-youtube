@@ -1,6 +1,7 @@
 {
 	"schemaVersion": "0.1.0",
 	"name": "2.0v",
+	"author": "Ruan Silva",
 	"behavior": "create",
 	"noteContentFormat": "{% set url = schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\" %}\n\n\n{% set texts = selector:.yt-core-attributed-string,.segment .segment-text %}\n{% set texts = selector:.segment .segment-text %}\n\n\n{% set timestamps = selector:.ytwTranscriptSegmentViewModelTimestamp,.segment .segment-timestamp %}\n{% set timestamps = selector:.segment .segment-timestamp %}\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Transcript\n{% for ts in timestamps %}\n  {% set parts = ts|split:\":\" %}\n  {% set length = parts|length %}\n  {% if length >= 3 %}\n    [{{ts}}]({{url}}&t={{parts|slice:0,1}}h{{parts|slice:1,2}}m{{parts|slice:2,3}}s) {{texts[loop.index0]}}\n  {% else %}\n    [{{ts}}]({{url}}&t={{parts|slice:0,1}}m{{parts|slice:1,2}}s) {{texts[loop.index0]}}\n  {% endif %}\n{% endfor %}",
 	"properties": [
