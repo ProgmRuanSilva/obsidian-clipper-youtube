@@ -11,14 +11,23 @@ Based in the [forum discussion](https://forum.obsidian.md/t/web-clipper-youtube-
 
 ## Installation
 
-#### STEP 0 - Choosing you template style
+#### STEP 0 - Choosing your template style
 
-##### 1. Only Transcription
-![alt text](assets/raw.png)
-##### 2. Timestamps 
-![alt text](assets/timestamp.png)
+<div align="center" style="display:flex;justify-content:center;gap:10px;">
 
-1. Download the template.
+<div style="text-align:center">
+  <h3>1. Only Transcription</h3>
+  <a href="2.1v.json" download><img src="assets/raw.png" width="600"/></a>
+</div>
+
+<div style="text-align:center">
+  <h3>2. Timestamps</h3>
+  <a href="2.2v.json" download><img src="assets/timestamp.png" width="600"/></a>
+</div>
+
+</div>
+
+1. Click on the template image to download the JSON file.
 2. Open the template file in Obsidian.
 3. Click on the "Install" button.
    ![](assets/0-step.png)
@@ -46,8 +55,9 @@ Install YouTube Tweaks in your browser: [Firefox](https://addons.mozilla.org/en-
 ### Contrubuiting
 
 ### Troubleshooting
-YouTube changes the selectors periodicaly, we upate every time but can be delayed 
 
+YouTube changes the selectors periodicaly, we upate every time but can be delayed
 
 ### Other Solutions
+
 [Recall](https://github.com/obsidian-transcribe/obsidi)
