@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "0.2.0",
+  "name": "YouTube Transcript",
+  "behavior": "create",
+  "properties": [
+    {
+      "name": "url",
+      "value": "{{schema:@VideoObject:embedUrl|replace:\\\"embed/\\\":\\\"watch?v=\\\"}}",
+      "type": "text"
+    },
+    {
+      "name": "channel",
+      "value": "{{schema:@VideoObject:author}}",
+      "type": "text"
+    }
+  ],
+  "triggers": ["https://www.youtube.com/watch"],
+  "noteNameFormat": "{{schema:@VideoObject:name|safe_name|trim}}",
+  "noteContentFormat": "## About\n\ntype:: #type/video/youtube\n\n![{{title}}]({{schema:@VideoObject:embedUrl|replace:\"embed/\":\"watch?v=\"}})\n\n## Description\n\n{{schema:@VideoObject:description}}\n\n## Notes\n\n\n\n## Transcript\n\n{{selectorHtml:ytd-engagement-panel-section-list-renderer[target-id=\"engagement-panel-searchable-transcript\"] .segment-text|replace:\"&nbsp;\":\" \"|join|markdown}}",
+  "path": "web"
+}
