@@ -16,23 +16,21 @@ Based in the [forum discussion](https://forum.obsidian.md/t/web-clipper-youtube-
 <div align="center" style="display:flex;justify-content:center;gap:10px;">
 
 <div style="text-align:center">
-  <h3>1. Only Transcription</h3>
-  <a href="2.1v.json" download><img src="assets/raw.png" width="400"/></a>
+  <h3>Raw Transcription</h3>
+  <a href="2.1v.json" download><img src="assets/raw.png" width="300"/></a>
 </div>
 
 <div style="text-align:center">
-  <h3>2. Timestamps</h3>
-  <a href="2.2v.json" download><img src="assets/timestamp.png" width="400"/></a>
+  <h3>Timestamps</h3>
+  <a href="2.2v.json" download><img src="assets/timestamp.png" width="300"/></a>
 </div>
 
 </div>
 
 ## Downloading the Selected Template
 
-<div style="display:flex;align-items:center;gap:20px;">
-  <img src="assets/download.png" width="500"/>
-  <img src="assets/import-select.png" width="500"/>
-</div>
+<img src="assets/download.png" width="500"/>
+<img src="assets/import-select.png" width="700"/>
 
 #### STEP 1 - Open transcribe section automatically
 
@@ -51,23 +49,11 @@ After the template installation you need to open the transcription tab aways, yo
   </a>
 </div>
 
-#### STEP 2 - Configure YouTube Tweaks
+#### STEP 2 - YouTube Tweaks Setup
 
 <div style="display:flex;align-items:center;gap:20px;">
   <img src="assets/1-step.png" width="300"/>
-  <ol>
-    <li>Open the YouTube Tweaks extension.</li>
-    <li>Click on the "Preferences" button.</li>
-  </ol>
-</div>
-
-<div style="display:flex;align-items:center;gap:20px;">
   <img src="assets/2-step.png" width="300"/>
-  <ol start="3">
-    <li>Go to the bottom.</li>
-    <li>Click on "Customize".</li>
-    <li>All done.🙃</li>
-  </ol>
 </div>
 
 ### Contrubuiting
