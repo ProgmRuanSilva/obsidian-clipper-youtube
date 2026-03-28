@@ -59,7 +59,7 @@ After installing the template, you need the transcription tab to open automatica
 
 ## STEP 3 - Be Happy 😁
 
-<img src="assets/example-working.png" width="800"/>
+<img src="assets/running.png" width="800"/>
 <img src="assets/done.png" width="600"/>
 
 ### 🤝 Contributing
